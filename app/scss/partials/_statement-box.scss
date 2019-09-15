@@ -1,0 +1,128 @@
+.statement-box {
+  background-color: $grey-color;
+  color: $light-black-color;
+  position: relative;
+  padding-bottom: 8rem;
+  font-family: "john_sans";
+
+  .col-2 {
+    width: 50%;
+  }
+
+  .doctor-img {
+    width: 100%;
+  }
+
+  .box1 {
+    padding: 0 2rem 0 13.5rem;
+  }
+
+  .box2 {
+    padding: 0 13.5rem 0 2rem;
+  }
+
+  h6 {
+    margin: 3.5rem 0;
+  }
+
+  h3 {
+    margin-bottom: 4rem;
+    color: $pink-color;
+  }
+
+  p {
+    min-height: 19rem;
+    line-height: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .half-container-left {
+    padding: 0 1.5rem 0 12rem;
+  }
+
+  .half-container-right {
+    padding: 0 12rem 0 1.5rem;
+  }
+
+  .half-container {
+    padding-left: 1.5rem;
+  }
+
+  .blue {
+    color: $sea-blue-color;
+  }
+
+  .border-top {
+    border-top: 0.1rem solid #cdcdcd;
+    padding-top: 1.5rem;
+    margin-right: 12rem;
+    margin-left: 12rem;
+  }
+
+  .download {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  .statement-box {
+    .col-2-full {
+      width: 100%;
+
+      .half-container-left,
+      .half-container-right {
+        padding: 0 2rem 0 2rem;
+      }
+    }
+
+    .col-2 {
+      width: 100%;
+
+      .half-container {
+        padding: 0 1.5rem 1.5rem 0;
+      }
+    }
+
+    .border-top {
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+
+    p {
+      min-height: unset;
+      margin-bottom: 5rem;
+    }
+
+    h3 {
+      font-size: 3.6rem;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .statement-box {
+    p {
+      min-height: unset;
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+
+    h6 {
+      margin: 2rem 0;
+    }
+
+    .border-top {
+      .col-2 {
+        width: 100%;
+
+        .download {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

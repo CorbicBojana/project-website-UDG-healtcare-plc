@@ -1,0 +1,96 @@
+.intro {
+  background: url(../images/eye.png) no-repeat $grey-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 88.9rem;
+  overflow: hidden;
+
+  .vector {
+    height: 100%;
+  }
+
+  .intro-box {
+    position: absolute;
+    top: 21rem;
+    right: 21rem;
+
+    h2 {
+      font-size: 4rem;
+      line-height: 4.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 2rem;
+    }
+  }
+
+  .rectangle-img {
+    position: absolute;
+    top: 46rem;
+    right: 33rem;
+  }
+}
+
+@media (min-width: 1281px) {
+  .intro {
+    .vector {
+      height: 80%;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .intro {
+    background-image: url(../images/eye-md.png);
+
+    .intro-box {
+      top: 31rem;
+      right: 8rem;
+
+      h2 {
+        font-size: 3.1rem;
+      }
+    }
+
+    .rectangle-img {
+      top: 44;
+      right: -14rem;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .intro {
+    background: url(../images/eye-sm.png) no-repeat $grey-color;
+    height: 56rem;
+
+    .intro-box {
+      width: 100%;
+      top: 28rem;
+      left: 2rem;
+
+      h2 {
+        line-height: 1.2;
+        font-size: 2.9rem;
+      }
+
+      .download {
+        margin-top: 2rem;
+      }
+    }
+
+    .rectangle-img {
+      display: none;
+    }
+
+    .text-center {
+      p {
+        display: none;
+      }
+    }
+  }
+}

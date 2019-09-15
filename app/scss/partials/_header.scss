@@ -1,0 +1,161 @@
+header {
+  color: $light-black-color;
+  padding: 5rem;
+  position: relative;
+  overflow: hidden;
+  height: 88.9rem;
+
+  nav {
+    padding: 5rem;
+  }
+
+  .logo {
+    float: left;
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-btn {
+    float: right;
+    text-align: center;
+    position: relative;
+    z-index: 30;
+    cursor: pointer;
+
+    .btn-line {
+      width: 3.8rem;
+      height: 0.2rem;
+      margin-bottom: 1.2rem;
+      border-radius: 0.5rem;
+      background-color: $sea-blue-color;
+      @include ease;
+    }
+
+    span {
+      display: block;
+      margin-top: 0.5rem;
+      font-family: "john_sans";
+      color: $light-black-color;
+      font-size: 1.2rem;
+
+      &::before {
+        content: "menu";
+      }
+    }
+
+    &.close {
+      position: fixed;
+      top: 5rem;
+      right: 5rem;
+      .btn-line {
+        background-color: $white-color;
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(1rem, 1rem);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(1rem, -1rem);
+        }
+      }
+      span {
+        color: $white-color;
+
+        &::before {
+          content: "close";
+        }
+      }
+    }
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: $sea-blue-color;
+    color: $white-color;
+    font-family: "john_sans";
+    visibility: hidden;
+    z-index: 10;
+
+    &.show {
+      visibility: visible;
+    }
+
+    &.nav-blue {
+      background: $sea-blue-color;
+    }
+
+    &.nav-orange {
+      background: $orange-color;
+    }
+
+    &.nav-grey {
+      background: $dark-grey-color;
+    }
+
+    h2 {
+      font-size: 3.4rem;
+      margin: 1.5rem 0 3rem 0;
+    }
+
+    .nav-link {
+      display: block;
+      max-width: 37rem;
+      color: $white-color;
+      margin: 0.5rem auto;
+      border: 1px solid $white-color;
+      padding: 2rem 0;
+      font-size: 1.6rem;
+      text-decoration: none;
+
+      &:hover {
+        background: $white-color;
+        color: $light-black-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  header {
+    padding: 5rem 2rem;
+
+    .menu-btn {
+      &.close {
+        right: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    height: 56rem;
+    padding: 2rem;
+    .logo {
+      img {
+        max-width: 19rem;
+      }
+    }
+
+    .menu {
+      font-size: 1.2rem;
+
+      img {
+        max-width: 85%;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .menu-btn {
+      &.close {
+        top: 2rem;
+      }
+    }
+  }
+}

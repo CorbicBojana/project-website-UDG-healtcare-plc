@@ -1,0 +1,146 @@
+.results {
+  position: relative;
+  background-color: $white-color;
+  color: $light-black-color;
+  padding: 10rem 0 8rem 0;
+  font-family: "john_sans";
+
+  h1,
+  h3,
+  h5 {
+    color: $orange-color;
+    font-family: "cordale_regular";
+  }
+
+  h6 {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-bottom: 5rem;
+  }
+
+  h5 {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin: 1rem 0 2rem 0;
+  }
+
+  p {
+    min-height: 3rem;
+    font-family: "john_sans_bold";
+    line-height: 1.2;
+  }
+
+  .border-top {
+    border-top: 0.1rem solid $grey-color;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .border-bottom {
+    border-bottom: 0.1rem solid #e0e0e0;
+    padding-bottom: 7rem;
+  }
+
+  .notice {
+    margin-top: 8rem;
+    font-family: "john_sans";
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .results .col-4 p {
+    min-height: 7rem;
+  }
+
+  .results .col-4 h1 {
+    font-size: 3.8rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .results {
+    h3 {
+      font-size: 3rem;
+    }
+
+    h5 {
+      font-size: 2.4rem;
+      min-height: 5rem;
+    }
+
+    h1 {
+      font-size: 4.2rem;
+      margin-top: 1rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      min-height: 7rem;
+    }
+
+    .graph {
+      margin-bottom: 4rem;
+    }
+
+    .download {
+      margin-top: 1.5rem;
+    }
+
+    .notice {
+      margin-top: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .border-div {
+      border-top: 0.1rem solid #e9efee;
+    }
+
+    .md-col-2 {
+      width: 48%;
+    }
+
+    .md-col-4 {
+      width: 32%;
+    }
+
+    .md-col-8 {
+      width: 65%;
+    }
+
+    .md-none {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .results {
+    .sm-col-12 {
+      width: 100%;
+    }
+    .notice {
+      margin-top: 3rem;
+    }
+
+    h1 {
+      font-size: 4.2rem;
+    }
+
+    h5 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}

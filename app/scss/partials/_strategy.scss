@@ -1,0 +1,108 @@
+.strategy-box {
+  background-color: $grey-color;
+  color: $light-black-color;
+  padding: 8rem 0;
+  position: relative;
+
+  h6 {
+    margin-bottom: 2rem;
+    font-family: "john_sans";
+  }
+
+  h3 {
+    margin-bottom: 3rem;
+    color: $sea-blue-color;
+  }
+
+  p {
+    min-height: 13rem;
+    line-height: 2rem;
+    font-family: "john_sans";
+  }
+
+  .box {
+    padding: 3rem 2.5rem;
+    color: $white-color;
+
+    h6 {
+      font-family: "cordale_regular";
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  .white-box {
+    background-color: $white-color;
+    color: $light-black-color;
+    padding: 2rem 2.5rem 0;
+
+    h6 {
+      font-family: "cordale_regular";
+    }
+    .sea-b {
+      color: $sea-blue-color;
+    }
+
+    .blue-color {
+      color: $blue-color;
+    }
+
+    .pink-color {
+      color: $pink-color;
+    }
+
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .sea-blue {
+    background-color: $sea-blue-color;
+  }
+
+  .blue {
+    background-color: $blue-color;
+  }
+
+  .pink {
+    background-color: $pink-color;
+  }
+
+  .border-top {
+    border-top: 0.1rem solid #cdcdcd;
+    margin-top: 3rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .strategy-box {
+    p {
+      margin-bottom: 3rem;
+    }
+    .col-4 {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+    }
+
+    h6 {
+      line-height: 1.2;
+    }
+
+    p {
+      min-height: unset;
+      font-size: 1.4rem;
+    }
+
+    .sea-blue,
+    .blue,
+    .pink {
+      padding-bottom: 1rem;
+    }
+  }
+}

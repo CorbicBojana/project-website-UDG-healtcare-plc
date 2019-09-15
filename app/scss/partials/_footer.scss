@@ -1,0 +1,58 @@
+footer {
+  background: url(../images/vector2.png) left top no-repeat $white-color;
+  color: $light-black-color;
+  padding: 10rem 0 23rem 0;
+  position: relative;
+
+  .col-3,
+  .col {
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .margin-bottom {
+    margin-bottom: 4rem;
+  }
+
+  .margin-top {
+    margin-top: 2.4rem;
+  }
+
+  h3 {
+    color: $orange-color;
+    margin: 1.5rem 0 3.5rem 0;
+  }
+
+  .download {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  footer {
+    padding: 10rem 0;
+
+    .col-3 {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  footer {
+    padding: 10rem 0;
+
+    .col-3 {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+    }
+  }
+}

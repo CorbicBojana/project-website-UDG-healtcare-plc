@@ -1,0 +1,119 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+@import "partials/_all.scss";
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "cordale_regular", Arial;
+}
+
+.container {
+  max-width: 116rem;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-2 {
+  width: 48%;
+}
+
+.col-2-full {
+  width: 50%;
+}
+
+.col-3 {
+  width: 24%;
+}
+
+.col-4 {
+  width: 32%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.float-right {
+  position: relative;
+  margin-left: 50%;
+  margin-top: 6%;
+}
+
+.download {
+  color: $light-black-color;
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3.6rem;
+}
+
+h5 {
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}

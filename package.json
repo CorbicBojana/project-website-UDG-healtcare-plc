@@ -1,0 +1,25 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "responsive website",
+  "main": "gruntfile.js",
+  "homepage": "https://corbicbojana.github.io/project-website-UDG-healtcare-plc/",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "CorbicB",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "grunt": "^1.0.4"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^4.12.0"
+  }
+}

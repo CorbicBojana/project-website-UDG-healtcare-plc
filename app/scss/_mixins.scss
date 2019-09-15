@@ -1,0 +1,11 @@
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+@mixin ease {
+  transition: all 0.5s ease-in-out;
+}
